@@ -14,5 +14,11 @@ resource helm_release external-dns {
     set {
         name  = "aws.zoneType"
         value = var.zonetype
-    }        
+    }
+
+    set {
+        name  = "aws.assumeRoleArn"
+        value = aws_iam_role.external_dns.arn
+    }
+      
 }
