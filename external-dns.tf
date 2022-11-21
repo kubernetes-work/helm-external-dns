@@ -23,7 +23,7 @@ resource helm_release external-dns {
 
     set {
         name  = "rbac.serviceAccountAnnotations"
-        value = "eks.amazonaws.com/role-arn: aws_iam_role.external_dns.arn"
+        value = "{eks.amazonaws.com/role-arn: aws_iam_role.external_dns.arn}"
     }    
       
 }
