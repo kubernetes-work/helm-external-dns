@@ -1,4 +1,4 @@
-variable "provider" {
+variable "external_dns_provider" {
   type  = string
 }
 
