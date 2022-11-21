@@ -5,7 +5,7 @@ resource helm_release external-dns {
     create_namespace = true
     set {
         name  = "provider"
-        value = var.provider
+        value = var.external_dns_provider
     }
     set {
         name  = "aws.region"
