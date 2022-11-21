@@ -9,3 +9,11 @@ variable "region" {
 variable "zonetype" {
   type  = string
 }
+
+variable "oidc_arn" {
+  type  = string
+}
+
+variable "oidc_url" {
+  type  = string
+}
