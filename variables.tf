@@ -17,3 +17,7 @@ variable "oidc_arn" {
 variable "oidc_url" {
   type  = string
 }
+
+variable "cluster_name" {
+  type  = string
+}
