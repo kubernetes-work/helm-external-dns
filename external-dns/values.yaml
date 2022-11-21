@@ -79,7 +79,7 @@ aws:
     accessKey: ""
     ## pre external-dns 0.5.9 home dir should be `/root/.aws`
     ##
-    mountPath: "/.aws"
+    mountPath: "~/.aws"
     ## Use an existing secret with key "credentials" defined.
     ## This ignores aws.credentials.secretKey, and aws.credentials.accessKey
     ##
